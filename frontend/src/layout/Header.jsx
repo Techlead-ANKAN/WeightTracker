@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Scale, Calendar, TrendingUp, Sun, MoonStar, Settings, LogOut } from 'lucide-react';
+import { Calendar, Scale, TrendingUp, Sun, MoonStar, Settings, LogOut } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
@@ -30,7 +30,7 @@ export const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Scale className="h-6 w-6 text-primary" />
+            <img src="/scale.png" alt="Weight Tracker" className="h-7 w-7" />
             <span className="text-lg font-semibold text-slate-900 dark:text-slate-100">
               Weight Tracker
             </span>

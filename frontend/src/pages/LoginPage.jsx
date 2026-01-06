@@ -83,8 +83,8 @@ const LoginPage = () => {
       <div className="w-full max-w-md">
         {/* Logo/Title */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 dark:bg-primary/20 mb-4">
-            <Lock className="h-8 w-8 text-primary" />
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 dark:bg-primary/20 mb-4 p-4">
+            <img src="/scale.png" alt="Weight Tracker" className="w-full h-full" />
           </div>
           <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2">
             Weight Tracker

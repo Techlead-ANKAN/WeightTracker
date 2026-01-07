@@ -6,6 +6,20 @@ A personal food and weight tracking web application built with MongoDB, Express,
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green)
 ![React](https://img.shields.io/badge/React-19.2.0-blue)
 ![Node](https://img.shields.io/badge/Node-Express-green)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
+
+## 🚀 Deploy Now!
+
+**Ready to go live in 15 minutes?** 
+
+👉 **[Quick Deploy Guide](DEPLOY_NOW.md)** - Step-by-step deployment to Vercel + Render (FREE)
+
+📋 Deployment files included:
+- `DEPLOY_NOW.md` - 15-minute quick deploy guide
+- `PRODUCTION_READY.md` - Production readiness report
+- `DEPLOYMENT_GUIDE.md` - Detailed deployment instructions
+- `vercel.json` - Vercel configuration
+- `render.yaml` - Render configuration
 
 ## 🎯 Features
 

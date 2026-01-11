@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import TodayFoodLog from './pages/TodayFoodLog';
 import WeightEntry from './pages/WeightEntry';
 import Progress from './pages/Progress';
+import FoodAnalytics from './pages/FoodAnalytics';
 import AdminPanel from './pages/AdminPanel';
 
 // Create React Query client
@@ -41,6 +42,7 @@ function App() {
                 <Route index element={<TodayFoodLog />} />
                 <Route path="weight" element={<WeightEntry />} />
                 <Route path="progress" element={<Progress />} />
+                <Route path="analytics" element={<FoodAnalytics />} />
                 <Route path="admin" element={<AdminPanel />} />
               </Route>
               <Route path="*" element={<Navigate to="/" replace />} />

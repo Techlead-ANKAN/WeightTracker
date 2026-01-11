@@ -4,6 +4,33 @@ const DailyFoodLog = require('../models/DailyFoodLog');
 const router = express.Router();
 
 /**
+ * GET /api/daily-log/range
+ * Fetch food logs for a date range
+ * Query params: start (YYYY-MM-DD), end (YYYY-MM-DD)
+ * Returns: Array of DailyFoodLog objects
+ */
+router.get('/range', async (req, res) => {
+  try {
+    const { start, end } = req.query;
+
+    if (!start || !end) {
+      return res.status(400).json({ error: 'Start and end dates are required' });
+    }
+
+    const logs = await DailyFoodLog.find({
+      date: { $gte: start, $lte: end }
+    })
+    .populate('breakfast lunch dinner')
+    .sort({ date: 1 });
+
+    res.json(logs);
+  } catch (error) {
+    console.error('Error fetching daily logs range:', error);
+    res.status(500).json({ error: 'Failed to fetch daily food logs' });
+  }
+});
+
+/**
  * GET /api/daily-log/:date
  * Fetch food log for a specific date
  * Param: date (YYYY-MM-DD format)

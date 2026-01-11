@@ -28,6 +28,16 @@ export const saveDailyLog = async (data) => {
 };
 
 /**
+ * Fetch daily logs for a date range
+ * @param {string} startDate - Start date in YYYY-MM-DD format
+ * @param {string} endDate - End date in YYYY-MM-DD format
+ */
+export const fetchDailyLogsRange = async (startDate, endDate) => {
+  const response = await apiClient.get(`/daily-log/range?start=${startDate}&end=${endDate}`);
+  return response.data;
+};
+
+/**
  * Fetch all weight entries
  */
 export const fetchWeightLogs = async () => {

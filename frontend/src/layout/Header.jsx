@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Calendar, Scale, TrendingUp, Sun, MoonStar, Settings, LogOut } from 'lucide-react';
+import { Calendar, Scale, TrendingUp, Activity, Sun, MoonStar, Settings, LogOut } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
@@ -15,6 +15,7 @@ export const Header = () => {
     { label: 'Today', to: '/', icon: Calendar },
     { label: 'Weight', to: '/weight', icon: Scale },
     { label: 'Progress', to: '/progress', icon: TrendingUp },
+    { label: 'Analytics', to: '/analytics', icon: Activity },
     { label: 'Admin', to: '/admin', icon: Settings }
   ];
 
